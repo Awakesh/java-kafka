@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+    options {
+        timestamps()
+        buildDiscarder(logRotator(daysToKeepStr: '7'))
+    }
+   stages {
+        stage('Prepare') {
+            steps {
+                dir("router") {
+                    sh 'make docker_tag'
+                    script {
+                    env.IMAGE_TAG = readFile(file: 'image_tag').trim()
+                    }
+                }
+            } 
+        }//prepare stage
+
+        stage('Build') {
+            steps {
+                echo "Building Docker Image ${IMAGE_TAG} ..." 
+                dir("router") {
+                    sh 'make docker_build'
+                 }
+               }
+        }//build stage
+
+        stage('PushDocker') {
+            steps {
+                echo 'Publishing Docker Image to ECR...'
+                 dir("router") {
+                    sh 'make docker_publish'
+                 }
+            }
+        }
+        stage('Deploy-QA') {
+            when {
+               branch 'master-test'
+            }
+            environment{
+                EKS_CLUSTER_NAME="qa-eks-cluster"
+            }
+            steps {
+                echo 'Deploying to QA cluster'
+                dir("router") {
+                    sh 'make k8s_deploy'  
+                }              
+            }
+        }//Deploy-QA
+
+  } //stages
+
+} //pipeline

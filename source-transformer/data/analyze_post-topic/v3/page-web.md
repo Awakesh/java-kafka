@@ -1,0 +1,42 @@
+mu-pixel-listener-3.lemnisk.internal	1640619415	142	{"data":"{\"writeKey\":\"tjwcn0ru0kov22mm46yc\",\"context\":{\"server_ts\":\"1640619415428\",\"library\":{\"name\":\"javascript\",\"version\":\"0.01\"},\"account_id\":\"VIZVRM6037\",\"srcid\":203,\"ip\":\"112.201.128.29\",\"userAgent\":{\"deviceType\":\"MOBILE\",\"osVersion\":\"10\",\"browser\":\"Chrome\",\"osType\":\"Android\",\"ua\":\"Mozilla/5.0 (Linux; Android 10; SM-N9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/348.0.0.39.118;]\"}},\"messageId\":\"3c997918-ed85-4683-8b56-2a5f9d9470c4\",\"otherIds\":{\"fbp\":\"fb.1.1640619377234.61954491\",\"fbc\":\"fb.1.1640619377230.IwAR1qODDffQN6ZruCmnh1ZVkgo2m0x_EoYcL0SiAmHCxp5Xg4f0K7PXBreMM\",\"ga\":\"GA1.1.255178833.1640619377\"},\"id\":\"viz_61c9dd791ad84\",\"type\":\"page\",\"receivedAt\":\"1640619415428\",\"originalTimestamp\":\"1640619415390\",\"properties\":{\"path\":\"/Home\",\"referrer\":\"https://l.facebook.com/\",\"name\":\"Home\",\"title\":\"Canvas Of You\",\"url\":\"https://www.canvasofyou.com/Home\"}}","campaignId":"VIZVRM6037","ds":"analyze_post"}
+
+
+```json
+{
+  "writeKey": "tjwcn0ru0kov22mm46yc",
+  "context": {
+    "server_ts": "1640619415428",
+    "library": {
+      "name": "javascript",
+      "version": "0.01"
+    },
+    "account_id": "VIZVRM6037",
+    "srcid": 203,
+    "ip": "112.201.128.29",
+    "userAgent": {
+      "deviceType": "MOBILE",
+      "osVersion": "10",
+      "browser": "Chrome",
+      "osType": "Android",
+      "ua": "Mozilla/5.0 (Linux; Android 10; SM-N9600 Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/348.0.0.39.118;]"
+    }
+  },
+  "messageId": "3c997918-ed85-4683-8b56-2a5f9d9470c4",
+  "otherIds": {
+    "fbp": "fb.1.1640619377234.61954491",
+    "fbc": "fb.1.1640619377230.IwAR1qODDffQN6ZruCmnh1ZVkgo2m0x_EoYcL0SiAmHCxp5Xg4f0K7PXBreMM",
+    "ga": "GA1.1.255178833.1640619377"
+  },
+  "id": "viz_61c9dd791ad84",
+  "type": "page",
+  "receivedAt": "1640619415428",
+  "originalTimestamp": "1640619415390",
+  "properties": {
+    "path": "/Home",
+    "referrer": "https://l.facebook.com/",
+    "name": "Home",
+    "title": "Canvas Of You",
+    "url": "https://www.canvasofyou.com/Home"
+  }
+}
+```

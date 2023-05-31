@@ -1,0 +1,40 @@
+mu-pixel-listener-4.lemnisk.internal	1640529018	142	{"data":"{\"page\":{\"srcTimestamp\":\"1640529017754\",\"context\":{\"writeKey\":\"mEnd4Nfr4Bw3xCrc\",\"library\":{\"name\":\"javascript\",\"version\":\"0.01\"},\"account_id\":6155,\"srcid\":167,\"ip\":\"168.149.15.113\",\"userAgent\":{\"deviceType\":\"MOBILE\",\"osVersion\":\"14\",\"browser\":\"Safari\",\"osType\":\"iOS\"}},\"messageId\":\"65d8df4f-c65b-4aa0-81da-b9def9a547a4\",\"otherIds\":{\"fbp\":\"fb.1.1640529017060.1769134756\",\"ga\":\"GA1.2.118403509.1640529017\"},\"pageProps\":{\"path\":\"/\",\"referrer\":\"https://www.google.com\",\"name\":\"Home\",\"title\":\"سباق جائزة السعودية الكبرى للفورمولا stc1 لعام 2021 في مدينة جدة\",\"url\":\"https://www.saudiarabiangp.com/\"},\"id\":\"viz_61c87c790d3d5\",\"lemTimestamp\":\"1640529018103\"}}","campaignId":"VIZVRM6155","ds":"analyze_post"}
+
+
+```json
+{
+  "page": {
+    "srcTimestamp": "1640529017754",
+    "context": {
+      "writeKey": "mEnd4Nfr4Bw3xCrc",
+      "library": {
+        "name": "javascript",
+        "version": "0.01"
+      },
+      "account_id": 6155,
+      "srcid": 167,
+      "ip": "168.149.15.113",
+      "userAgent": {
+        "deviceType": "MOBILE",
+        "osVersion": "14",
+        "browser": "Safari",
+        "osType": "iOS"
+      }
+    },
+    "messageId": "65d8df4f-c65b-4aa0-81da-b9def9a547a4",
+    "otherIds": {
+      "fbp": "fb.1.1640529017060.1769134756",
+      "ga": "GA1.2.118403509.1640529017"
+    },
+    "pageProps": {
+      "path": "/",
+      "referrer": "https://www.google.com",
+      "name": "Home",
+      "title": "سباق جائزة السعودية الكبرى للفورمولا stc1 لعام 2021 في مدينة جدة",
+      "url": "https://www.saudiarabiangp.com/"
+    },
+    "id": "viz_61c87c790d3d5",
+    "lemTimestamp": "1640529018103"
+  }
+}
+```

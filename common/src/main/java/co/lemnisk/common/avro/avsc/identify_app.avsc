@@ -1,0 +1,268 @@
+{
+  "name": "IdentifyApp",
+  "type": "record",
+  "namespace": "co.lemnisk.common.avro.model.event.identify.app",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "userId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "server_ts",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "otherIds",
+      "type": {
+        "type": "map",
+        "values": ["null", "int", "string", "boolean"],
+        "default": {}
+      }
+    },
+    {
+      "name": "context",
+      "type": {
+        "name": "Context",
+        "type": "record",
+        "fields": [
+          {
+            "name": "library",
+            "type": {
+              "name": "ContextLibrary",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "version",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "app",
+            "type": {
+              "name": "ContextApp",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "version",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "build",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "device",
+            "type": {
+              "name": "ContextDevice",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "advertisingId",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "adTrackingEnabled",
+                  "type": "boolean"
+                },
+                {
+                  "name": "manufacturer",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "model",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "type",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "token",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "screen",
+            "type": {
+              "name": "ContextScreen",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "width",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "height",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "density",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "userAgent",
+            "type": {
+              "name": "ContextUserAgent",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "osType",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "osVersion",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "ip",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "srcId",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "accountId",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "messageId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "customerProperties",
+      "type": {
+        "type": "map",
+        "values": ["null", "int", "string", "boolean", {
+          "type": "array",
+          "items": "string"
+        }, {
+          "type": "map",
+          "values": ["null", "int", "string", "boolean", {
+            "type": "array",
+            "items": "string"
+          }, {
+            "type": "map",
+            "values": ["null", "int", "string", "boolean", {
+              "type": "array",
+              "items": "string"
+            }, {
+              "type": "map",
+              "values": ["null", "int", "string", "boolean", {
+                "type": "array",
+                "items": "string"
+              }]
+            }]
+          }]
+        }],
+        "default": {}
+      }
+    },
+    {
+      "name": "receivedAt",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sentAt",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "originalTimestamp",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "writeKey",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "destinationInstanceId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "tracerId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "spanId",
+      "type": "string",
+      "doc": "This is used for Tracing",
+      "default": ""
+    },
+    {
+      "name": "isStandardEvent",
+      "type": ["null", "boolean"],
+      "default": null
+    }
+  ]
+}

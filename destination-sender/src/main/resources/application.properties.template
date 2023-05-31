@@ -1,0 +1,56 @@
+server.port=4040
+#spring.kafka.bootstrap-servers=localhost:9092
+spring.kafka.consumer.group-id=runtime-kafka-registry
+spring.kafka.properties.consumer.enable-auto-commit=true
+custom.kafka.listeners.listener-1.topic=default-destination_sender-topic
+custom.kafka.listeners.listener-1.listener-class=KafkaCustomMessageListener
+
+# Required connection configs for Kafka producer, consumer, and admin
+spring.kafka.properties.bootstrap.servers={{bootstrap_servers}}
+spring.kafka.properties.security.protocol=SASL_SSL
+spring.kafka.properties.sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule   required username='{{required_username}}'   password='{{password}}';
+spring.kafka.properties.sasl.mechanism=PLAIN
+# Required for correctness in Apache Kafka clients prior to 2.6
+spring.kafka.properties.client.dns.lookup=use_all_dns_ips
+
+# Best practice for higher availability in Apache Kafka clients prior to 3.0
+spring.kafka.properties.session.timeout.ms=45000
+
+# Best practice for Kafka producer to prevent data loss
+spring.kafka.properties.acks=all
+
+# Required connection configs for Confluent Cloud Schema Registry
+spring.kafka.properties.schema.registry.url={{schema_registry_url}}
+spring.kafka.properties.basic.auth.credentials.source=USER_INFO
+basic.auth.user.info={{basic_auth_user_info}}
+thread.pool.size=4
+thread.pool.max.size=6
+thread.queue.capacity=100000
+thread.pool.name=ConsumerThread
+rest.client.thread.pool.size=5
+rest.client.thread.pool.max.size=10
+rest.client.thread.queue.capacity=100000
+rest.client.thread.pool.name=RestClientThread
+
+# logging.level.root=OFF
+# logging.level.co.lemnisk=TRACE
+
+spring.profiles.active=common
+spring.datasource.url={{db_url}}
+spring.datasource.username={{db_username}}
+spring.datasource.password={{db_password}}
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+
+
+destination.sender.data.json.context.accountId=$.context.accountId
+destination.sender.data.json.context.destinationInstanceId=$.destinationInstanceId
+destination.sender.data.json.type=$.type
+destination.sender.data.json.event=$.event
+destination.sender.data.json.properties=$.properties
+destination.sender.data.json.context.srcId=$.srcId
+
+# Jaeger Properties
+jaeger.endpoint=http://jaeger-collector.services.svc.cluster.local:14250
+jaeger.service.name=Event_Processor

@@ -1,0 +1,46 @@
+{
+  "id": "viz_6139c51ee9662",
+  "userId": "6791c47a-0178-47bc-8711-86a2c67b2255",
+  "otherIds": {
+    "email": "john.doe@gmail.com",
+    "phone": "9848012345",
+    "_fbp": 1631176031249,
+    "_fbc": "6791c47a-0178-47bc-8711-86a2c67b2255",
+    "_ga": "1631176031249"
+  },
+  "context": {
+    "library": {
+      "name": "javascript",
+      "version": "0.01"
+    },
+    "userAgent": {
+      "deviceType": "DESKTOP",
+      "osType": "Linux",
+      "osVersion": "Linux",
+      "browser": "Chrome",
+      "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"
+    },
+    "ip": "108.0.78.21"
+  },
+  "page": {
+    "path": "/academy/",
+    "referrer": "",
+    "search": "",
+    "title": "Analytics Academy",
+    "url": "https://lemnisk.co"
+  },
+  "messageId": "ajs-f8ca1e4de5024d9430b3928bd8ac6b96",
+  "customerProperties": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "Male",
+    "age": "27",
+    "city": "Mumbai"
+  },
+  "receivedAt": "2015-12-12T19:11:01.266Z",
+  "sentAt": "2015-12-12T19:11:01.169Z",
+  "timestamp": "2015-12-12T19:11:01.249Z",
+  "type": "identify",
+  "originalTimestamp": "2015-12-12T19:11:01.152Z",
+  "writeKey": "aUL2rZghe5jHvjWh"
+}

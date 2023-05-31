@@ -1,0 +1,239 @@
+{
+  "namespace": "co.lemnisk.common.avro.model.event.page",
+  "name": "Page",
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "userId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "ampId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "server_ts",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "otherIds",
+      "type": {
+        "type": "map",
+        "values": ["null", "int", "string", "boolean"],
+        "default": {}
+      }
+    },
+    {
+      "name": "context",
+      "type": {
+        "namespace": "co.lemnisk.common.avro.model.event.page",
+        "name": "Context",
+        "type": "record",
+        "fields": [
+          {
+            "name": "ip",
+            "type": "string"
+          },
+          {
+            "name": "library",
+            "type": {
+              "namespace": "co.lemnisk.common.avro.model.event.page",
+              "name": "ContextLibrary",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "version",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "userAgent",
+            "type": {
+              "namespace": "co.lemnisk.common.avro.model.event.page",
+              "name": "ContextUserAgent",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "deviceType",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "osType",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "osVersion",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "browser",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "ua",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "utm",
+            "type": {
+              "namespace": "co.lemnisk.common.avro.model.event.page",
+              "name": "ContextUtm",
+              "type": "record",
+              "fields": [
+                {
+                  "name": "campaign",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "source",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "medium",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "term",
+                  "type": "string",
+                  "default": ""
+                },
+                {
+                  "name": "content",
+                  "type": "string",
+                  "default": ""
+                }
+              ]
+            }
+          },
+          {
+            "name": "srcId",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "accountId",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "messageId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "properties",
+      "type": {
+        "type": "map",
+        "values": ["null", "int", "string", "boolean", {
+          "type": "array",
+          "items": "string"
+        }, {
+          "type": "map",
+          "values": ["null", "int", "string", "boolean", {
+            "type": "array",
+            "items": "string"
+          }, {
+            "type": "map",
+            "values": ["null", "int", "string", "boolean", {
+              "type": "array",
+              "items": "string"
+            }, {
+              "type": "map",
+              "values": ["null", "int", "string", "boolean", {
+                "type": "array",
+                "items": "string"
+              }]
+            }]
+          }]
+        }],
+        "default": {}
+      }
+    },
+    {
+      "name": "receivedAt",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "sentAt",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "originalTimestamp",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "writeKey",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "destinationInstanceId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "tracerId",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "spanId",
+      "type": "string",
+      "doc": "This is used for Tracing",
+      "default": ""
+    },
+    {
+      "name": "isStandardEvent",
+      "type": ["null", "boolean"],
+      "default": null
+    }
+  ]
+}

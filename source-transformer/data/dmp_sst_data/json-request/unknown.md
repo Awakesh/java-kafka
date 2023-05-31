@@ -1,0 +1,17 @@
+- Request with no event type
+
+
+mu-pixel-listener-4.lemnisk.internal	1640759779	101	{"data":"{\"vizid\":\"viz_61cc01e3fbc4c\",\"advid\":\"VIZVRM6155\",\"action\":\"BL\",\"ua\":\"win10chrome76\",\"am\":{},\"version\":\"1\",\"url\":\"https://www.saudiarabiangp.com/register-your-interest/\",\"ts\":\"1640759779011\"}","campaignId":"VIZVRM6155","ds":"webpush_optin"}
+
+```json
+{
+  "vizid": "viz_61cc01e3fbc4c",
+  "advid": "VIZVRM6155",
+  "action": "BL",
+  "ua": "win10chrome76",
+  "am": {},
+  "version": "1",
+  "url": "https://www.saudiarabiangp.com/register-your-interest/",
+  "ts": "1640759779011"
+}
+```

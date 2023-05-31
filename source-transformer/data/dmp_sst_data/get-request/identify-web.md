@@ -1,0 +1,38 @@
+mu-pixel-listener-3.lemnisk.internal	1640757736	13	{"data":"viz_6190ae02f4da9\tviz_6190ae02f4da9\thttps://canvas.livspace.com/&account_id=VIZVRM6106&originalTimestamp=2021-12-29T06%3A02%3A16.000Z&event_type=identify&userid=BO13574&i_userid=BO13574&i_email=ayushi.jha%40livspace.com&i_name=Ayushi%20Jha&i_city=Kolkata&i_managerId=13345&page_url=https%3A%2F%2Fcanvas.livspace.com%2Fhome&ts=&ga=GA1.2.488805678.1636871682&fbp=fb.1.1637057382812.1848905200&singleTagVersion=0.02v&param=e100&section=1&level=1&userAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F96.0.4664.110%20Safari%2F537.36&library_version=0.06v&library_name=smarttag&device_type=DESKTOP&os_name=Windows&os_version=Windows%2010&messageId=2f9d8ee2-87e2-4049-b93a-063b28424390&sentTime=2021-12-29T06%3A02%3A16.000Z&page_title=Livspace%20Studio%20-%20Livspace%20Studio%20Platform.&page_search=&page_referrer=https%3A%2F%2Fcanvas.livspace.com%2F&page_path=%2Fhome&locale=en-US&cb=viz_6190ae02f4da9\t-\t-\t-\tVIZVRM6106\t2021-12-29-11:32:16\t49.37.36.54\tMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36\te100\t-\tDVNOPROCESS\t-\t-\t-\t0\t85437\t\t22118\tmu-pl.lemnisk.co\tmu-pixel-listener-3.lemnisk.internal\t1640757736162\t{}","campaignId":"VIZVRM6106","ds":"analyze"}
+
+
+##### URL Parameters:
+
+```
+account_id=VIZVRM6106
+originalTimestamp=2021-12-29T06:02:16.000Z
+event_type=identify
+userid=BO13574
+i_userid=BO13574
+i_email=ayushi.jha@livspace.com
+i_name=Ayushi Jha
+i_city=Kolkata
+i_managerId=13345
+page_url=https://canvas.livspace.com/home
+ts=
+ga=GA1.2.488805678.1636871682
+fbp=fb.1.1637057382812.1848905200
+singleTagVersion=0.02v
+param=e100
+section=1
+level=1
+userAgent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
+library_version=0.06v
+library_name=smarttag
+device_type=DESKTOP
+os_name=Windows
+os_version=Windows 10
+messageId=2f9d8ee2-87e2-4049-b93a-063b28424390
+sentTime=2021-12-29T06:02:16.000Z
+page_title=Livspace Studio - Livspace Studio Platform.
+page_search=
+page_referrer=https://canvas.livspace.com/
+page_path=/home
+locale=en-US
+cb=viz_6190ae02f4da9
+```

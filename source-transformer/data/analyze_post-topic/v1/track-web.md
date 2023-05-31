@@ -1,0 +1,42 @@
+mu-pixel-listener-3.lemnisk.internal    1640619415    142    {"data":"{\"evtnm\":\"productClick\",\"track\":{\"eventName\":\"productClick\",\"trackProps\":{\"srcTimestamp\":\"1640619413273\",\"context\":{\"writeKey\":\"TvSrqZgFSm2zeVg8\",\"library\":{\"name\":\"javascript\",\"version\":\"0.01\"},\"account_id\":5979,\"srcid\":179,\"ip\":\"106.193.159.21\",\"userAgent\":{\"deviceType\":\"MOBILE\",\"osVersion\":\"15\",\"osType\":\"iOS\",\"Browser\":\"Safari\"}},\"messageId\":\"350a9a02-907f-47ca-ad83-1fdded8cd089\",\"otherIds\":{\"fbp\":\"fb.1.1640591662341.1526845501\",\"ga\":\"GA1.2.391492456.1640591662\"},\"id\":\"viz_61c971619a30a\",\"lemTimestamp\":\"1640619415079\"},\"eventProperties\":{\"Variant\":\"STD (150 CC)\",\"DropOffURL\":\"https://uatsf.hdfcergo.com/UTesting/TWRevamp/Integration/IncompleteTransaction/\"}}}","campaignId":"VIZVRM5979","ds":"analyze_post"}
+
+
+
+```json
+{
+  "evtnm": "productClick",
+  "track": {
+    "eventName": "productClick",
+    "trackProps": {
+      "srcTimestamp": "1640619413273",
+      "context": {
+        "writeKey": "TvSrqZgFSm2zeVg8",
+        "library": {
+          "name": "javascript",
+          "version": "0.01"
+        },
+        "account_id": 5979,
+        "srcid": 179,
+        "ip": "106.193.159.21",
+        "userAgent": {
+          "deviceType": "MOBILE",
+          "osVersion": "15",
+          "osType": "iOS",
+          "Browser": "Safari"
+        }
+      },
+      "messageId": "350a9a02-907f-47ca-ad83-1fdded8cd089",
+      "otherIds": {
+        "fbp": "fb.1.1640591662341.1526845501",
+        "ga": "GA1.2.391492456.1640591662"
+      },
+      "id": "viz_61c971619a30a",
+      "lemTimestamp": "1640619415079"
+    },
+    "eventProperties": {
+      "Variant": "STD (150 CC)",
+      "DropOffURL": "https://uatsf.hdfcergo.com/UTesting/TWRevamp/Integration/IncompleteTransaction/"
+    }
+  }
+}
+```

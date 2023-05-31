@@ -1,0 +1,8 @@
+# Kafka Consumer configurations, properties are separated by semicolon (;)
+KafkaConsumerConfig=zookeeper.connect\={{kafka_migration_zookeeper_url}};group.id\={{kafka_migration_group_id}};consumer.id\={{kafka_migration_consumer_id}};rebalance.max.retries\=60
+KafkaTopicList={{kafka_migration_topic_list}}
+KafkaTopicConsumerBatchSize={{kafka_migration_batch_size}}
+KafkaTopicConsumers={{kafka_migration_topic_consumers}}
+KafkaTopicConsumerDefaultBatchTimeoutMS={{kafka_migration_batch_timeout_ms}}
+KafkaTopicConsumerDefaultBatchTimeoutTrigger={{kafka_migration_batch_timeout_trigger}}
+KafkaRebalanceMaxRetries={{kafka_migration_max_retries}}

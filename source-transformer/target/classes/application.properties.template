@@ -1,0 +1,42 @@
+server.port={{source_transformer_server_port}}
+
+###### Kafka Properties ######
+# Source topics
+kafka.topic.source.dmp_sst_data={{source_transformer_topic_dmp_sst_data}}
+kafka.topic.source.analyze_post={{source_transformer_topic_analyze_post}}
+kafka.topic.source.dmp_nba_di_api={{source_transformer_topic_dmp_nba_di_api}}
+
+# Sink topics
+kafka.topic.sink={{source_transformer_topic_sink}}
+kafka.topic.sink.default={{source_transformer_topic_default_sink}}
+
+# Level 1 (Intermediate) topics
+kafka.topic.analyze_post.l1.v1={{source_transformer_topic_analyze_post_l1_v1}}
+kafka.topic.analyze_post.l1.v2={{source_transformer_topic_analyze_post_l1_v2}}
+kafka.topic.analyze_post.l1.v3={{source_transformer_topic_analyze_post_l1_v3}}
+kafka.topic.analyze_post.l1.default={{source_transformer_topic_analyze_post_l1_default}}
+
+# Stream Application ID
+kafka.stream.analyze_post.id={{source_transformer_analyze_post_stream_id}}
+kafka.stream.dmp_sst_data.id={{source_transformer_dmp_sst_data_stream_id}}
+kafka.stream.dmp_nba_di_api.id={{source_transformer_dmp_nba_di_api_stream_id}}
+
+# Stream Thread Count
+kafka.stream.analyze_post.thread={{source_transformer_analyze_post_thread}}
+kafka.stream.dmp_sst_data.thread={{source_transformer_dmp_sst_data_thread}}
+kafka.stream.dmp_nba_di_api.thread={{source_transformer_dmp_nba_di_api_thread}}
+
+# JPA Properties
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.hibernate.naming.physical-strategy=org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+spring.profiles.include=common
+
+# Cache Properties
+spring.jpa.properties.hibernate.cache.use_second_level_cache=true
+spring.jpa.properties.hibernate.cache.region.factory_class=org.hibernate.cache.ehcache.EhCacheRegionFactory
+spring.jpa.properties.javax.persistence.sharedCache.mode=ENABLE_SELECTIVE
+
+# Jaeger Properties
+jaeger.endpoint={{jaeger_endpoint}}
+jaeger.service.name={{jaeger_service_name}}

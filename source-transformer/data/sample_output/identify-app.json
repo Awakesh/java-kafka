@@ -1,0 +1,50 @@
+{
+  "id": "viz_6139c51ee9662",
+  "userId": "6791c47a-0178-47bc-8711-86a2c67b2255",
+  "otherIds": {
+    "trackerId": "6791c47a-0178-47bc-8711-86a2c67b2255",
+    "email":"john.doe@gmail.com",
+    "phone":"9848012345"
+  },
+  "context": {
+    "library": {
+      "name": "ios sdk",
+      "version": "0.01"
+    },
+    "app": {
+      "name": "Insta Astro",
+      "version": "545",
+      "build": "3.0.1.545"
+    },
+    "device": {
+      "id": "B5372DB0-C21E-11E4-8DFC-AA07A5B093DB",
+      "advertisingId": "7A3CBEA0-BDF5-11E4-8DFC-AA07A5B093DB",
+      "adTrackingEnabled": true,
+      "manufacturer": "Apple",
+      "model": "iPhone11",
+      "type": "ios",
+      "token": "ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449"
+    },
+    "screen": {
+      "width": 320,
+      "height": 568,
+      "density": 2
+    },
+    "userAgent": {
+      "osType": "iOS",
+      "osVersion": "14"
+    },
+    "ip": "108.0.78.21"
+  },
+  "messageId": "ajs-f8ca1e4de5024d9430b3928bd8ac6b96",
+  "customerProperties": {
+    "firsName": "John",
+    "lastName": "Doe"
+  },
+  "receivedAt": "2015-12-12T19:11:01.266Z",
+  "sentAt": "2015-12-12T19:11:01.169Z",
+  "timestamp": "2015-12-12T19:11:01.249Z",
+  "type": "identify",
+  "originalTimestamp": "2015-12-12T19:11:01.152Z",
+  "writeKey": "aUL2rZghe5jHvjWh"
+}
